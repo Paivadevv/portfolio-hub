@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Relatório Final — PortfolioHUB</title>
+<!-- Para editar: altere os textos abaixo, abra no navegador e use Ctrl+P → "Salvar como PDF" -->
+<style>
+  @page { size: A4; margin: 2.2cm 2cm; }
+  body { font-family: "Segoe UI", Roboto, Arial, sans-serif; color: #1f2937; font-size: 11pt; line-height: 1.55; }
+  h1, h2, h3 { color: #1e3a8a; }
+  h2 { font-size: 15pt; border-bottom: 2px solid #2563eb; padding-bottom: 4px; margin-top: 26px; }
+  h3 { font-size: 12pt; margin-bottom: 4px; }
+  code { background: #f1f5f9; padding: 1px 5px; border-radius: 4px; font-size: 9.5pt; }
+  pre { background: #f1f5f9; padding: 10px 12px; border-radius: 6px; font-size: 9pt; line-height: 1.4; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 10pt; }
+  th, td { border: 1px solid #cbd5e1; padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: #e0e7ff; }
+  .capa { height: 24cm; display: flex; flex-direction: column; justify-content: space-between; text-align: center; page-break-after: always; }
+  .capa h1 { font-size: 26pt; margin: 0; }
+  .capa .sub { font-size: 14pt; color: #2563eb; margin-top: 8px; }
+  .capa .meta { font-size: 12pt; line-height: 1.9; }
+  .quebra { page-break-before: always; }
+  pre, table, tr { page-break-inside: avoid; }
+  h2, h3 { page-break-after: avoid; }
+  .vazio { color: #9ca3af; font-style: italic; }
+  @media screen { body { max-width: 860px; margin: 30px auto; padding: 0 20px; } .capa { height: auto; gap: 40px; padding: 40px 0; border-bottom: 1px solid #cbd5e1; } }
+</style>
+</head>
+<body>
+
+<!-- ================= CAPA ================= -->
+<section class="capa">
+  <div class="meta">
+    <strong>CEUB — Centro Universitário de Brasília</strong><br>Bootcamp I<br>
+    Engenharia de Computação
+  </div>
+  <div>
+    <h1>PortfolioHUB</h1>
+    <div class="sub">Criação de Repositório com Versionamento</div>
+    <p>Relatório Final — Desafio da Entrega Intermediária</p>
+  </div>
+  <div class="meta">
+    <strong>Aluno:</strong> Luiz Eduardo Paiva Costa<br>
+    Brasília - DF<br>
+    Outubro de 2026
+  </div>
+</section>
+
+<!-- ================= 1 ================= -->
+<h2>1. Introdução</h2>
+<p>
+  Este relatório descreve o desenvolvimento do <strong>PortfolioHUB</strong>, um repositório no GitHub criado para
+  reunir projetos acadêmicos e pessoais de forma organizada, documentada e versionada. O trabalho atende ao
+  desafio da entrega intermediária do Bootcamp I, que propõe aplicar boas práticas de versionamento com Git,
+  publicar uma página com o GitHub Pages e integrar o repositório ao LinkedIn.
+</p>
+
+<h2>2. Objetivos</h2>
+<ul>
+  <li>Planejar e organizar um repositório com estrutura clara de pastas;</li>
+  <li>Criar um site de portfólio simples (HTML e CSS) e versioná-lo com Git, a partir da versão 1.0;</li>
+  <li>Documentar o repositório e cada projeto com arquivos <code>README.md</code>;</li>
+  <li>Publicar o site no GitHub Pages;</li>
+  <li>Tornar o repositório público e divulgá-lo no LinkedIn;</li>
+  <li>Apresentar o trabalho em um vídeo de cerca de 5 minutos no YouTube.</li>
+</ul>
+
+<h2>3. Ferramentas utilizadas</h2>
+<table>
+  <tr><th>Ferramenta</th><th>Uso no projeto</th></tr>
+  <tr><td>HTML5 e CSS3</td><td>Construção do site de portfólio</td></tr>
+  <tr><td>Git</td><td>Versionamento (commits e tags de versão)</td></tr>
+  <tr><td>GitHub</td><td>Hospedagem pública do repositório</td></tr>
+  <tr><td>GitHub Pages</td><td>Publicação do site estático</td></tr>
+  <tr><td>LinkedIn</td><td>Divulgação do projeto no perfil profissional</td></tr>
+  <tr><td>YouTube</td><td>Publicação do vídeo de apresentação</td></tr>
+</table>
+
+<!-- ================= 4 ================= -->
+<h2>4. Etapa 1 — Planejamento do repositório</h2>
+<p>
+  Antes de criar os arquivos, foram definidas as seções do repositório: <strong>site</strong> (raiz),
+  <strong>projetos acadêmicos</strong>, <strong>projetos pessoais</strong> e <strong>documentação</strong>.
+  A estrutura de diretórios ficou assim:
+</p>
+<pre>portfolio-hub/
+├── index.html                 → página principal do portfólio
+├── css/style.css              → estilos do site
+├── img/avatar.svg             → imagem de perfil
+├── projetos/
+│   ├── academicos/
+│   │   ├── ironstack-banco-de-dados/       (README.md)
+│   │   └── artigo-programacao-funcional/   (README.md)
+│   └── pessoais/
+│       ├── automacao-python/               (README.md)
+│       └── estudos-java/                   (README.md, OlaMundo.java)
+├── docs/
+│   ├── relatorio-final.html   → este relatório
+│   ├── guia-git/README.md     → comandos Git e exemplos de commits
+│   ├── guia-publicacao.md     → GitHub Pages, repositório público e LinkedIn
+│   └── roteiro-video.md       → roteiro da apresentação
+├── .gitignore
+└── README.md                  → documentação principal</pre>
+<p>
+  O <code>index.html</code> fica na raiz para que o GitHub Pages publique o site sem configurações extras.
+  Cada projeto tem sua própria pasta, o que facilita adicionar novos projetos no futuro.
+</p>
+
+<!-- ================= 5 ================= -->
+<h2>5. Etapa 2 — Criação e versionamento do projeto</h2>
+<p>
+  O projeto inicial é o site de portfólio, feito apenas com HTML e CSS, sem JavaScript ou frameworks.
+  Ele possui as seções: Apresentação, Sobre mim, Projetos (acadêmicos e pessoais), Habilidades,
+  Documentos e Contato, além de layout responsivo para celular.
+</p>
+<p>O versionamento seguiu dois marcos, cada um com commits pequenos e descritivos:</p>
+<table>
+  <tr><th>Versão</th><th>Conteúdo</th><th>Commits</th></tr>
+  <tr>
+    <td><strong>v1.0</strong></td>
+    <td>Site inicial e README principal</td>
+    <td><code>chore: adiciona .gitignore</code><br><code>style: adiciona estilos do site em CSS</code><br><code>feat: adiciona imagem de perfil</code><br><code>feat: cria página principal do portfólio em HTML</code><br><code>docs: adiciona README principal do repositório</code></td>
+  </tr>
+  <tr>
+    <td><strong>v1.1</strong></td>
+    <td>Alterações enviadas ao GitHub: projetos, documentação, relatório e links atualizados</td>
+    <td><code>docs: adiciona projeto acadêmico IronStack (banco de dados)</code><br><code>docs: adiciona projeto acadêmico do artigo de programação funcional</code><br><code>docs: adiciona projeto pessoal de automação em Python</code><br><code>feat: adiciona projeto de estudos de Java com primeiro programa</code><br><code>docs: adiciona guia de Git com comandos e exemplos de commits</code><br><code>docs: adiciona guia de publicação e roteiro do vídeo</code><br><code>docs: adiciona relatório final do trabalho</code><br><code>fix: atualiza links do GitHub e do GitHub Pages</code></td>
+  </tr>
+</table>
+<p>
+  Os commits foram feitos pela interface web do GitHub (envio de arquivos com mensagem de commit), e cada
+  versão foi marcada com uma <em>tag</em> por meio de uma <em>release</em> (v1.0 e v1.1). Os comandos Git
+  equivalentes para fazer o mesmo pelo terminal estão documentados em <code>docs/guia-git/README.md</code>:
+</p>
+<pre>git add .
+git commit -m "feat: cria página principal do portfólio em HTML"
+git tag -a v1.0 -m "Versão 1.0 - site inicial do portfólio"
+git push origin main --tags</pre>
+<p>
+  As mensagens de commit seguem o padrão <em>Conventional Commits</em> (<code>feat</code>, <code>fix</code>,
+  <code>docs</code>, <code>style</code>, <code>chore</code>), com uma mudança lógica por commit.
+</p>
+
+<!-- ================= 6 ================= -->
+<h2>6. Etapa 3 — Organização e documentação</h2>
+<p>
+  O <strong>README principal</strong> apresenta o objetivo do repositório, a árvore de pastas, a lista de projetos,
+  como o site funciona, como abri-lo e editá-lo, o histórico de versões e as tecnologias usadas.
+  Cada projeto possui um <strong>README próprio</strong> com o mesmo padrão:
+</p>
+<ul>
+  <li>Descrição e objetivos;</li>
+  <li>Tecnologias utilizadas;</li>
+  <li>Tabela de arquivos;</li>
+  <li>Instruções de uso ou execução;</li>
+  <li>Autor.</li>
+</ul>
+<table>
+  <tr><th>Projeto</th><th>Categoria</th><th>Descrição</th></tr>
+  <tr><td>IronStack</td><td>Acadêmico</td><td>Banco de dados de um sistema de gerenciamento de academia (SQL)</td></tr>
+  <tr><td>Programação Funcional</td><td>Acadêmico</td><td>Artigo ABNT sobre programação funcional e qualidade de software</td></tr>
+  <tr><td>Automação de Inatividade</td><td>Pessoal</td><td>Script Python que fecha o navegador após inatividade do mouse</td></tr>
+  <tr><td>Estudos de Java</td><td>Pessoal</td><td>Exercícios do Bootcamp Java com Inteligência Artificial</td></tr>
+</table>
+
+<!-- ================= 7 ================= -->
+<h2 class="quebra">7. Etapa 4 — GitHub Pages</h2>
+<p>
+  O site foi publicado pelo GitHub Pages em <strong>Settings → Pages → Deploy from a branch → main / (root)</strong>.
+  A página reúne o site, os projetos e os documentos do trabalho (este relatório e o guia de Git), como pede o desafio.
+  Endereço: <a href="https://paivadevv.github.io/portfolio-hub/">https://paivadevv.github.io/portfolio-hub/</a>
+</p>
+
+<!-- ================= 8 ================= -->
+<h2>8. Etapa 5 — Compartilhamento e integração com o LinkedIn</h2>
+<p>
+  O repositório foi configurado como <strong>público</strong>, recebeu descrição, link do site e tópicos
+  (<code>portfolio</code>, <code>html</code>, <code>css</code>, <code>github-pages</code>, <code>git</code>) e foi
+  fixado no perfil do GitHub. No LinkedIn, o projeto foi adicionado à seção <strong>Projetos</strong>, com descrição,
+  habilidades (HTML, CSS, Git, GitHub) e os links do site e do repositório. As instruções detalhadas estão em
+  <code>docs/guia-publicacao.md</code>.
+</p>
+
+<!-- ================= 9 ================= -->
+<h2>9. Etapa 6 — Revisão final e apresentação</h2>
+<p>
+  Como revisão final, foi preparada uma apresentação em vídeo de cerca de 5 minutos, publicada no YouTube,
+  mostrando a estrutura do repositório, a documentação, o histórico de versões, o site no GitHub Pages
+  e a integração com o LinkedIn.
+</p>
+
+<!-- ================= 10 ================= -->
+<h2>10. Atendimento aos critérios de avaliação</h2>
+<table>
+  <tr><th>Critério</th><th>Como foi atendido</th></tr>
+  <tr><td>Organização</td><td>Pastas separadas para site, projetos acadêmicos, projetos pessoais e documentos</td></tr>
+  <tr><td>Documentação</td><td>README principal e um README padronizado para cada projeto</td></tr>
+  <tr><td>Integração</td><td>Repositório público com link adicionado à seção Projetos do LinkedIn</td></tr>
+  <tr><td>Publicação</td><td>Site publicado no GitHub Pages</td></tr>
+  <tr><td>Apresentação</td><td>Vídeo de cerca de 5 minutos no YouTube, seguindo roteiro</td></tr>
+</table>
+
+<!-- ================= 11 ================= -->
+<h2>11. Links da entrega</h2>
+<table>
+  <tr><th>Item</th><th>Link</th></tr>
+  <tr><td>Repositório no GitHub</td><td>https://github.com/Paivadevv/portfolio-hub</td></tr>
+  <tr><td>Site (GitHub Pages)</td><td>https://paivadevv.github.io/portfolio-hub/</td></tr>
+  <tr><td>Projeto no LinkedIn</td><td class="vazio">(inserir link do perfil)</td></tr>
+  <tr><td>Vídeo no YouTube</td><td class="vazio">(inserir link do vídeo)</td></tr>
+</table>
+
+<!-- ================= 12 ================= -->
+<h2>12. Conclusão</h2>
+<p>
+  O desafio permitiu praticar todo o ciclo de um projeto em repositório: planejar a estrutura, criar o conteúdo,
+  versionar com Git em etapas, documentar com README, publicar com o GitHub Pages e divulgar no LinkedIn.
+  O resultado é um portfólio simples, organizado e público, que poderá ser atualizado a cada novo projeto,
+  bastando criar uma nova pasta em <code>projetos/</code>, documentá-la e registrar a mudança com um novo commit.
+</p>
+
+</body>
+</html>
