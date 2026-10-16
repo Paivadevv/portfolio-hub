@@ -74,17 +74,11 @@ O site é **estático**: usa apenas HTML e CSS, sem JavaScript, frameworks ou ba
 1. Baixe ou clone o repositório;
 2. Dê dois cliques no arquivo `index.html`;
 3. O site abre no navegador.
-
-### Como editar
-- Textos e links: edite o `index.html`;
-- Cores: altere as variáveis no início do `css/style.css`;
-- Foto: substitua `img/avatar.svg` por sua foto (ex.: `img/avatar.jpg`) e atualize o `src` no HTML.
-
 ---
 
 ## 🔖 Versionamento
 
-O projeto é versionado com Git seguindo commits curtos e descritivos (padrão *Conventional Commits*).
+O projeto é versionado com Git seguindo commits curtos e descritivos.
 
 | Versão | Descrição |
 |---|---|
