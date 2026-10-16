@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Luiz Eduardo Paiva Costa, estudante de Engenharia de Computação.">
+  <title>PortfolioHUB | Luiz Eduardo Paiva Costa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho e menu -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="#inicio" class="logo">Portfolio<span>HUB</span></a>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#documentos">Documentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Apresentação -->
+    <section id="inicio" class="hero">
+      <div class="container hero-conteudo">
+        <img src="img/avatar.svg" alt="Foto de perfil" class="avatar">
+        <div>
+          <p class="saudacao">Olá, eu sou</p>
+          <h1>Luiz Eduardo Paiva Costa</h1>
+          <p class="cargo">Estudante de Engenharia de Computação</p>
+          <p class="resumo">
+            Estou construindo minha base em programação, banco de dados e sistemas.
+            Aqui reúno meus projetos acadêmicos e pessoais, organizados e versionados com Git.
+          </p>
+          <a href="#projetos" class="botao">Ver projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="secao">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <p>
+          Sou estudante de Engenharia de Computação no CEUB, em Brasília. Tenho interesse em
+          desenvolvimento de software, banco de dados e automação. Atualmente estou
+          estudando Java e procurando minha primeira oportunidade de estágio.
+        </p>
+        <ul class="info">
+          <li><strong>Curso:</strong> Engenharia de Computação — CEUB (conclusão prevista: dez/2028)</li>
+          <li><strong>Localização:</strong> Brasília - DF</li>
+          <li><strong>Objetivo:</strong> Estágio em desenvolvimento de software</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="secao secao-clara">
+      <div class="container">
+        <h2>Projetos</h2>
+
+        <h3 class="subtitulo">Acadêmicos</h3>
+        <div class="grade">
+          <article class="card">
+            <span class="tag">Banco de Dados</span>
+            <h4>IronStack</h4>
+            <p>Modelagem e consultas SQL de um sistema de gerenciamento de academia.</p>
+            <a href="projetos/academicos/ironstack-banco-de-dados/">Ver detalhes →</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Artigo</span>
+            <h4>Programação Funcional</h4>
+            <p>Artigo acadêmico sobre a influência da programação funcional na qualidade de software.</p>
+            <a href="projetos/academicos/artigo-programacao-funcional/">Ver detalhes →</a>
+          </article>
+        </div>
+
+        <h3 class="subtitulo">Pessoais</h3>
+        <div class="grade">
+          <article class="card">
+            <span class="tag">Python</span>
+            <h4>Automação de Inatividade</h4>
+            <p>Script que monitora a inatividade do mouse e fecha o navegador após um tempo definido.</p>
+            <a href="projetos/pessoais/automacao-python/">Ver detalhes →</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Java</span>
+            <h4>Estudos de Java</h4>
+            <p>Exercícios e anotações do Bootcamp Java com Inteligência Artificial.</p>
+            <a href="projetos/pessoais/estudos-java/">Ver detalhes →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="secao">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <ul class="lista-tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Git e GitHub</li>
+          <li>Python</li>
+          <li>Java (em estudo)</li>
+          <li>SQL</li>
+          <li>Sistemas Operacionais</li>
+          <li>Linguagens Formais</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Documentos -->
+    <section id="documentos" class="secao secao-clara">
+      <div class="container">
+        <h2>Documentos</h2>
+        <div class="grade">
+          <article class="card">
+            <h4>Relatório Final</h4>
+            <p>Documento de entrega do Bootcamp explicando todas as etapas do trabalho.</p>
+            <a href="docs/relatorio-final.html" target="_blank">Abrir relatório →</a>
+          </article>
+          <article class="card">
+            <h4>Guia de Git</h4>
+            <p>Comandos usados no versionamento e exemplos de commits.</p>
+            <a href="docs/guia-git/">Ver guia →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="secao">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Fique à vontade para entrar em contato:</p>
+        <!-- EDITE: troque pelos seus dados reais -->
+        <ul class="contatos">
+          <li><strong>E-mail:</strong> <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/SEU-USUARIO" target="_blank">github.com/SEU-USUARIO</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank">linkedin.com/in/SEU-PERFIL</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 Luiz Eduardo Paiva Costa · Feito com HTML e CSS · Publicado com GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
