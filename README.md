@@ -10,9 +10,9 @@ Ele reúne meus projetos acadêmicos e pessoais em um só lugar, organizados em 
 
 | Item | Link |
 |---|---|
-| Site (GitHub Pages) | `https://SEU-USUARIO.github.io/portfolio-hub/` *(substitua após publicar)* |
-| Repositório | `https://github.com/SEU-USUARIO/portfolio-hub` *(substitua após criar)* |
-| Vídeo de apresentação | *(adicione o link do YouTube após gravar)* |
+| Site (GitHub Pages) | https://paivadevv.github.io/portfolio-hub/ |
+| Repositório | https://github.com/Paivadevv/portfolio-hub |
+| Vídeo de apresentação | *(em breve)* |
 
 ---
 
@@ -75,7 +75,7 @@ O site é **estático**: usa apenas HTML e CSS, sem JavaScript, frameworks ou ba
 3. O site abre no navegador.
 
 ### Como editar
-- Textos e links: edite o `index.html` (procure os comentários `<!-- EDITE -->`);
+- Textos e links: edite o `index.html`;
 - Cores: altere as variáveis no início do `css/style.css`;
 - Foto: substitua `img/avatar.svg` por sua foto (ex.: `img/avatar.jpg`) e atualize o `src` no HTML.
 
@@ -88,9 +88,9 @@ O projeto é versionado com Git seguindo commits curtos e descritivos (padrão *
 | Versão | Descrição |
 |---|---|
 | **v1.0** | Primeira versão do site e estrutura inicial do repositório |
-| **v1.1** | Inclusão dos READMEs dos projetos, documentação e relatório |
+| **v1.1** | Inclusão dos projetos, documentação, relatório e links atualizados |
 
-Os comandos utilizados estão em [`docs/guia-git`](docs/guia-git/README.md).
+Os comandos Git equivalentes estão em [`docs/guia-git`](docs/guia-git/README.md).
 
 ---
 
@@ -108,5 +108,4 @@ Os comandos utilizados estão em [`docs/guia-git`](docs/guia-git/README.md).
 
 **Luiz Eduardo Paiva Costa** — Estudante de Engenharia de Computação (CEUB) · Brasília - DF
 
-- GitHub: `https://github.com/SEU-USUARIO`
-- LinkedIn: `https://www.linkedin.com/in/SEU-PERFIL`
+- GitHub: https://github.com/Paivadevv
