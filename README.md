@@ -12,6 +12,7 @@ Ele reúne meus projetos acadêmicos e pessoais em um só lugar, organizados em 
 |---|---|
 | Site (GitHub Pages) | https://paivadevv.github.io/portfolio-hub/ |
 | Repositório | https://github.com/Paivadevv/portfolio-hub |
+| LinkedIn | https://www.linkedin.com/in/luiz-eduardo-paiva-costa-9475502b7/ |
 | Vídeo de apresentação | *(em breve)* |
 
 ---
@@ -109,3 +110,4 @@ Os comandos Git equivalentes estão em [`docs/guia-git`](docs/guia-git/README.md
 **Luiz Eduardo Paiva Costa** — Estudante de Engenharia de Computação (CEUB) · Brasília - DF
 
 - GitHub: https://github.com/Paivadevv
+- LinkedIn: https://www.linkedin.com/in/luiz-eduardo-paiva-costa-9475502b7/
