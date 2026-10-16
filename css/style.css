@@ -1,0 +1,257 @@
+/* ===== Variáveis de cor ===== */
+:root {
+  --primaria: #2563eb;
+  --primaria-escura: #1e40af;
+  --texto: #1f2937;
+  --texto-suave: #6b7280;
+  --fundo: #ffffff;
+  --fundo-claro: #f3f6fb;
+  --borda: #e5e7eb;
+}
+
+/* ===== Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--texto);
+  background: var(--fundo);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primaria);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Cabeçalho ===== */
+.topo {
+  position: sticky;
+  top: 0;
+  background: var(--fundo);
+  border-bottom: 1px solid var(--borda);
+  z-index: 10;
+}
+
+.topo-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--texto);
+}
+
+.logo span {
+  color: var(--primaria);
+}
+
+nav a {
+  margin-left: 18px;
+  color: var(--texto);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primaria);
+  text-decoration: none;
+}
+
+/* ===== Apresentação (hero) ===== */
+.hero {
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+  padding: 80px 0;
+}
+
+.hero-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid var(--primaria);
+  flex-shrink: 0;
+}
+
+.saudacao {
+  color: var(--texto-suave);
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+.cargo {
+  color: var(--primaria);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.resumo {
+  max-width: 520px;
+  margin-bottom: 22px;
+}
+
+.botao {
+  display: inline-block;
+  background: var(--primaria);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.botao:hover {
+  background: var(--primaria-escura);
+  text-decoration: none;
+}
+
+/* ===== Seções ===== */
+.secao {
+  padding: 60px 0;
+}
+
+.secao-clara {
+  background: var(--fundo-claro);
+}
+
+.secao h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--primaria);
+  padding-left: 12px;
+}
+
+.subtitulo {
+  margin: 24px 0 12px;
+  color: var(--texto-suave);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info,
+.contatos {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.info li,
+.contatos li {
+  margin-bottom: 6px;
+}
+
+/* ===== Cards ===== */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.card h4 {
+  font-size: 1.15rem;
+  margin: 8px 0;
+}
+
+.card p {
+  color: var(--texto-suave);
+  margin-bottom: 12px;
+}
+
+.card a {
+  font-weight: 600;
+}
+
+.tag {
+  display: inline-block;
+  background: #dbeafe;
+  color: var(--primaria-escura);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+/* ===== Habilidades ===== */
+.lista-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lista-tags li {
+  background: var(--fundo-claro);
+  border: 1px solid var(--borda);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+  background: var(--texto);
+  color: #d1d5db;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===== Celular ===== */
+@media (max-width: 700px) {
+  .hero-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resumo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav a {
+    margin: 0 12px 0 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
