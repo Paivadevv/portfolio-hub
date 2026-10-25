@@ -105,3 +105,22 @@ Os comandos Git equivalentes estão em [`docs/guia-git`](docs/guia-git/README.md
 
 - GitHub: https://github.com/Paivadevv
 - LinkedIn: https://www.linkedin.com/in/luiz-eduardo-paiva-costa-9475502b7/
+
+
+## 🔌 Vitrine GitHub (v1.2 — Entrega Final)
+
+A página [`vitrine.html`](vitrine.html) lê meus repositórios públicos pela **API pública do GitHub** (sem token) e os exibe com nome, descrição, tecnologias e link, com busca e filtro. Se a API falhar, usa a lista local `data/projects.json`.
+
+| Arquivo | Função |
+|---|---|
+| `vitrine.html` | Página com CSP restritiva |
+| `js/config.js` | Usuário do GitHub e tópico (configuração pública, nunca coloque tokens) |
+| `js/lib.js` | Validação de usuário/URL e filtros (testados) |
+| `js/app.js` | Interface e chamada à API |
+| `test/lib.test.js` | Testes unitários |
+| `.github/workflows/ci.yml` | CI: roda os testes com permissão somente leitura |
+
+**Testes:** `npm test` (Node.js 20+, sem dependências).
+**Servidor local:** `python3 -m http.server 8080` e abra `http://localhost:8080/vitrine.html` (módulos ES não funcionam via `file://`).
+
+Documentação: [Segurança](docs/SEGURANCA.md) · [GitHub, usuários e colaboração](docs/GITHUB_E_COLABORACAO.md) · [Uso do Gemini](docs/GEMINI.md) · [SECURITY.md](SECURITY.md)
