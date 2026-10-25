@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Vitrine de repositórios de Luiz Eduardo Paiva Costa, lida da API pública do GitHub.">
+  <title>Vitrine GitHub | PortfolioHUB</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vitrine.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="pular" href="#projetos">Ir para os projetos</a>
+
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="index.html" class="logo">Portfolio<span>HUB</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#projetos">Projetos</a>
+        <a href="vitrine.html">Vitrine GitHub</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="projetos" class="secao secao-clara">
+      <div class="container">
+        <h2>Vitrine GitHub</h2>
+        <p>Esta página lê meus repositórios públicos pela API do GitHub, então novos projetos aparecem aqui automaticamente.</p>
+        <h3 class="subtitulo">Repositórios</h3>
+        <div class="ferramentas">
+          <label for="q"><strong>Buscar</strong></label>
+          <input id="q" type="search" maxlength="60" autocomplete="off" placeholder="nome, tecnologia ou descrição">
+          <div id="filters" role="group" aria-label="Filtrar por tecnologia"></div>
+        </div>
+        <p id="status" role="status" aria-live="polite">Carregando projetos…</p>
+        <div id="grid" class="grade"></div>
+        <noscript><p>Esta página precisa de JavaScript. Veja os projetos na <a href="index.html#projetos">página inicial</a>.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 Luiz Eduardo Paiva Costa · Vitrine integrada à API pública do GitHub · Sem coleta de dados</p>
+  </footer>
+</body>
+</html>
