@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-hub",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "PortfolioHUB: portfólio estático integrado à API pública do GitHub",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node --test test/*.test.js"
+  },
+  "license": "MIT"
+}
