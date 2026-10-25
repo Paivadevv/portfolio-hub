@@ -1,0 +1,26 @@
+[
+  {
+    "name": "IronStack",
+    "description": "Modelagem e consultas SQL de um sistema de gerenciamento de academia.",
+    "tech": ["SQL", "Banco de Dados"],
+    "url": "https://github.com/Paivadevv/portfolio-hub/tree/main/projetos/academicos/ironstack-banco-de-dados"
+  },
+  {
+    "name": "Programação Funcional",
+    "description": "Artigo acadêmico sobre a influência da programação funcional na qualidade de software.",
+    "tech": ["Artigo", "Programação Funcional"],
+    "url": "https://github.com/Paivadevv/portfolio-hub/tree/main/projetos/academicos/artigo-programacao-funcional"
+  },
+  {
+    "name": "Automação de Inatividade",
+    "description": "Script que monitora a inatividade do mouse e fecha o navegador após um tempo definido.",
+    "tech": ["Python", "Automação"],
+    "url": "https://github.com/Paivadevv/portfolio-hub/tree/main/projetos/pessoais/automacao-python"
+  },
+  {
+    "name": "Estudos de Java",
+    "description": "Exercícios e anotações do Bootcamp Java com Inteligência Artificial.",
+    "tech": ["Java"],
+    "url": "https://github.com/Paivadevv/portfolio-hub/tree/main/projetos/pessoais/estudos-java"
+  }
+]
